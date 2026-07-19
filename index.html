@@ -311,14 +311,13 @@
 					const details = document.createElement('div');
 					details.className = 'details';
 
-					details.innerHTML =
-					"Age: " + person.Age +
-					"<br>" +
-					"Country: " + person.Country +
-					"<br>" +
-					"Interest: " + person.Interest +
-					"<br>" +
-					"Net Worth: " + person["Net Worth"];
+					details.innerHTML = `
+					<b style="font-size:14px;">${person.Name}</b><br><br>
+					Age: ${person.Age}<br>
+					Country: ${person.Country}<br>
+					Interest: ${person.Interest}<br>
+					Net Worth: ${person["Net Worth"]}
+`;
 					element.appendChild(details);
 
 					const objectCSS = new CSS3DObject( element );
